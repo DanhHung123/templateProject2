@@ -1,0 +1,339 @@
+body {
+    position: relative;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7;
+    border-radius: 7rem;
+}
+body::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 7rem;
+}
+.blog__item {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 30px;
+}
+.blog__item img {
+    max-height: 270px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: auto;
+}
+.blog__item__text {
+    padding: 30px 0 30px 10px;
+}
+.blog__item__text a {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    position: relative;
+    text-decoration: none;
+}
+.blog__item__text a span {
+    width: 40%;
+    border-radius: 30px;
+    display: block;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.25s linear;
+}
+.blog__item__text a:hover span {
+    width: 100%;
+    background-color: #4650dd;
+}
+
+.cateIndex {
+    padding-top: 0;
+}
+.cateInde-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cateInde-item a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 12px 0 16px;
+    padding: 0 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: initial;
+}
+.btn-pr-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CountDown-box {
+    display: flex;
+    justify-content: space-between;
+}
+.CountDown {
+    display: flex;
+    align-items: center;
+}
+.CountDown > div {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #707a8a;
+}
+.price-base {
+    text-decoration: line-through;
+}
+.icon-Clock {
+    padding-right: 3px;
+    color: #707a8a;
+    font-size: 13px;
+}
+.pro-user {
+    font-size: 13px;
+    font-weight: bold;
+    color: #707a8a;
+}
+.pro-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #707a8a;
+    font-weight: 600;
+}
+.pro-price span {
+    color: black;
+    font-size: 18px;
+}
+.pro-title {
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.pro-text {
+    padding-bottom: 20px;
+}
+.icon-nav {
+    position: relative;
+    cursor: pointer;
+}
+.icon-nav svg{
+    font-size: 20px !important;
+}
+.price-detail-box {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.price-detail-box label {
+    padding-right: 15px;
+}
+.detail-price-time {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.CountDown.CountDown-detail > span {
+    display: none;
+}
+.CountDown.CountDown-detail > div
+{
+    font-size: 18px;
+    padding: 0 25px;
+    position: relative;
+}
+.CountDown-detail  div:after {
+    font-size: 18px;
+    position: absolute;
+    bottom: -30px;
+    font-weight: 400;
+}
+.CountDown-detail  div:nth-child(2)::after {
+    content: 'Day';
+    left: 18px;
+}
+.CountDown-detail  div:nth-child(3)::after {
+    content: 'Hour';
+    left: 15px;
+}
+.CountDown-detail  div:nth-child(4)::after {
+    content: 'Minute';
+    left: 8px;
+}
+.CountDown-detail  div:nth-child(5)::after {
+    content: 'Second';
+    left: 8px;
+}
+#search-nav {
+    background-color: white;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px #8d8d8d;
+    padding: 20px;
+    transform: translateX(110%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+#search-nav.active {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+}
+#search-nav form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close-nav-search {
+    text-align: right;
+    padding-bottom: 20px;
+}
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.border-md {
+    border-width: 2px;
+}
+
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+
+
+
+
+
+
+
+
+
+
+/*Boostrap 5 col*/
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+.input-group-prepend span {
+    padding: 10px 24px !important;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.buton-cus {
+    border-radius: 5px;
+}
+
+.up-image-item {
+    position: relative;
+}
+.up-image-item label {
+    cursor: pointer;
+}
+.up-image-item label img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.close-up-image {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 100;
+}
+.close-up-image button {
+    padding: 5px;
+    background-color: #f50622;
+}
